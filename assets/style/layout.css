@@ -1,0 +1,103 @@
+/* header */
+
+.header-content {
+  padding: 3rem 5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-content .input-area {
+  display: flex;
+  width: 52rem;
+  position: relative;
+  border-radius: 3rem;
+  background-color: #f6f6f6;
+  padding: 0 6.4rem 0 2.2rem;
+}
+.header-content .input-area input {
+  border: none;
+  height: 4.4rem;
+  width: 100%;
+  border-radius: 3rem;
+  background-color: #f6f6f6;
+  padding: 0 6.4rem 0 2.2rem;
+}
+.header-content .input-area .search-btn {
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  transform: translateY(-50%);
+}
+.header-content .icon-area {
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.header-content .icon-area .login-icon {
+  margin-left: 2.4rem;
+}
+.header-content .icon-area .bag-icon {
+  margin-left: 2.4rem;
+}
+
+/* nav */
+
+nav {
+  padding: 0 5rem;
+}
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 163.2rem;
+  min-width: 112rem;
+  margin: 0 auto;
+  margin-top: 2.4rem;
+}
+.nav-content .brand-area {
+  display: flex;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #333;
+  line-height: 2.2rem;
+  padding-bottom: 2.4rem;
+  
+}
+.nav-content .brand-area .brand {
+  position: relative;
+  
+}
+.nav-content .brand-area .brand a {
+  padding-right: 1.5rem;
+}
+.nav-content .brand-area .brand a::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: 2px;
+  bottom: auto;
+  left: auto;
+  width: 7px;
+  height: 7px;
+  border-right: 2px solid #111;
+  border-bottom: 2px solid #111;
+  transform: rotate(45deg);
+    transition: 0.3s;
+}
+.nav-content .brand-area .brand-item {
+  display: flex;
+}
+.nav-content .brand-area .brand-item li {
+  margin-left: 2.4rem;
+}
+.nav-content .brand-info {
+  display: flex;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #888;
+  padding-bottom: 2.4rem;
+}
+.nav-content .brand-info li {
+  margin-left: 2.4rem;
+}
