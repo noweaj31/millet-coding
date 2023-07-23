@@ -61,11 +61,9 @@ nav {
   color: #333;
   line-height: 2.2rem;
   padding-bottom: 2.4rem;
-  
 }
 .nav-content .brand-area .brand {
   position: relative;
-  
 }
 .nav-content .brand-area .brand a {
   padding-right: 1.5rem;
@@ -82,7 +80,7 @@ nav {
   border-right: 2px solid #111;
   border-bottom: 2px solid #111;
   transform: rotate(45deg);
-    transition: 0.3s;
+  transition: 0.3s;
 }
 .nav-content .brand-area .brand-item {
   display: flex;
@@ -101,3 +99,37 @@ nav {
 .nav-content .brand-info li {
   margin-left: 2.4rem;
 }
+
+/* footer */
+
+footer {
+  width: 100%;
+  height: 38.5rem;
+  padding: 6rem 12.6rem 0 5rem;
+  background: #f6f6f6;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 14px;
+  color: #888;
+}
+.footer-content .info-area .millet-info {
+  padding-top: 4rem;
+}
+.footer-content .info-area .millet-info .adress span {
+  position: relative;
+  margin: 0 0.9rem;
+}
+.footer-content .info-area .millet-info .adress span::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 12px;
+  border-left: 1px solid #c4c4c4;
+  transform: translateY(-50%);
+  margin-left: 9px;
+}
+
