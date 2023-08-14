@@ -134,7 +134,7 @@ main .main-wrap {
 .main-content .best-content .main-best {
   width: 31.3rem;
   position: relative;
-
+  margin-right: 0.8rem;
 }
 .main-content .best-content .main-best img {
   width: 100%;
@@ -159,25 +159,35 @@ main .main-wrap {
   font-size: 1.6rem;
   line-height: 2rem;
 }
-.main-content .best-content .item-content {
+.main-content .best-content .item-wrap {
   display: flex;
   width: calc(100% - 31.3rem);
   overflow: hidden;
   margin-left: 0.8rem;
 }
-.main-content .best-content .item-content .item-1 {
-  /* width: 18.575rem; */
+.main-content .best-content .item-wrap .item-1 {
+  width: 18.575rem;
   margin-right: 1.6rem;
-}
-.main-content .best-content .item-content .item-1 .item-area {
+  height: 100%;
   position: relative;
+  flex-shrink: 0;
 }
-.main-content .best-content .item-content .item-1 img {
+.main-content .best-content .item-wrap .item-1 .item-area {
+  position: relative;
+  overflow: hidden;
+  height: 18.575rem
+}
+  
+.main-content .best-content .item-wrap .item-1 .item-area img {
+  position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transform: scale(1);
+  transition: 0.3s;
 }
-.main-content .best-content .item-content .item-1 span {
+
+.main-content .best-content .item-wrap .item-1 span {
   position: absolute;
   top: 1.6rem;
   left: 2rem;
@@ -186,32 +196,71 @@ main .main-wrap {
   line-height: 2.4rem;
   color: #111;
 }
-.main-content .best-content .item-content .item-1 .item-info {
+.main-content .best-content .item-wrap .item-1 .item-content {
   margin-top: 2.1rem;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
-.main-content .best-content .item-content .item-1 .item-info .millet {
+.main-content .best-content .item-wrap .item-1 .item-content .millet {
   display: flex;
   justify-content: space-between;
 }
-.main-content .best-content .item-content .item-1 .item-info .millet p {
+.main-content .best-content .item-wrap .item-1 .item-content .millet p {
   margin-right: 2rem;
     font-size: 1.5rem;
     line-height: 1.8rem;
     color: #888;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    
 }
-.main-content .best-content .item-content .item-1 .item-info .name {
+.main-content .best-content .item-wrap .item-1 .item-content .item-info {
   margin-top: 0.8rem;
+  position: relative;;
+  
+}
+.main-content .best-content .item-wrap .item-1 .item-content .item-info .name {
   font-size: 1.5rem;
   line-height: 1.8rem;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
 }
+.main-content .best-content .item-wrap .item-1 .item-content .item-info .price-area {
+  
+  display: flex;
+  color: #111;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  
+}
+.main-content .best-content .item-wrap .item-1 .item-content .item-info .price-area .price {
+  font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 1.4rem;
+    
+}
+.main-content .best-content .item-wrap .item-1 .item-content .item-info .badge-content {
+  height: 3rem;
+  padding-top: 0.2rem;
+  color: #111;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    position: relative;
+    
+}
+.main-content .best-content .item-wrap .item-1 .item-content .item-info .badge-content span {
+  padding: 0 6px;
+    font-size: 13px;
+    line-height: 20px;
+    color: #888;
+    border-radius: 3px;
+    background-color: #f6f6f6;
+    position: absolute;
+    
+    margin: 8px 8px 0 0;
+    top: 0;
+    left: 0;
+} 
 
 /* footer */
 
