@@ -43,7 +43,16 @@
     <nav>
       <div class="nav-content">
         <div class="brand-area">
-          <div class="brand"><a href="">BRANDS</a></div>
+          <div class="brand">
+            <a class="brand-title" href="">BRANDS</a>
+            <div class="bottom-menu">
+              <ul class="menu-area">
+                <li><a href="">MILLET CLASSIC</a></li>
+                <li><a href="">STAY GOLD</a></li>
+                <li><a href="">RUDY PROJECT</a></li>
+              </ul>
+            </div>
+          </div>
           <ul class="brand-item">
             <li><a href="">BEST</a></li>
             <li><a href="">ICE SHELL</a></li>
@@ -65,9 +74,9 @@
     <main>
       <div class="main-wrap">
         <div class="main-img">
-          <div><img src="./assets/image/main-img1.jpg" alt="" /></div>
-          <div><img src="./assets/image/main-img2.jpg" alt="" /></div>
-          <div><img src="./assets/image/main-img3.jpg" alt="" /></div>
+          <div class="img-area"><img src="./assets/image/main-img1.jpg" alt="" /></div>
+          <div class="img-area"><img src="./assets/image/main-img2.jpg" alt="" /></div>
+          <div class="img-area"><img src="./assets/image/main-img3.jpg" alt="" /></div>
         </div>
         <div class="main-content">
           <div class="content-head"><h1>MILLET PICK 베스트아이템</h1></div>
@@ -256,14 +265,18 @@
         </div>
         <div class="main-content-2">
           <div class="season-area">
-            <img src="./assets/image/2-img2.jpg" alt="" />
-            <p class="cate">SEASON ESSENTIALS</p>
-            <p class="text">산으로 떠날 때 필수아이템</p>
+            <a href=""><div class="img-area"><img src="./assets/image/2-img2.jpg" alt="" /></div></a>
+            <div>
+              <p class="cate">SEASON ESSENTIALS</p>
+              <p class="text">산으로 떠날 때 필수아이템</p>
+            </div>
           </div>
           <div class="season-area">
-            <img src="./assets/image/2-img1.jpg" alt="" />
-            <p class="cate">2023 F/W NEW ARRIVAL</p>
+            <a href=""><div class="img-area"><img src="./assets/image/2-img1.jpg" alt="" /></div></a>
+            <div>
+              <p class="cate">2023 F/W NEW ARRIVAL</p>
             <p class="text">OPEN YOUR MOUNTAIN</p>
+            </div>
           </div>
         </div>
         <div class="new-item-content">
@@ -678,4 +691,16 @@
       </div>
     </footer>
   </body>
+  <script>
+    const tabmenu = document.querySelectorAll(".brand");
+      console.log(tabmenu.length);
+      for (let i = 0; i < tabmenu.length; i++) {
+        tabmenu[i].addEventListener("mouseover", () => {
+          tabmenu[i].classList.add("is_active");
+        });
+        tabmenu[i].addEventListener("mouseout", () => {
+          tabmenu[i].classList.remove("is_active");
+        });
+      }
+  </script>
 </html>
