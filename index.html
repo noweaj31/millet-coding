@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./assets/style/style.css" />
     <link rel="stylesheet" href="./assets/style/reset.css" />
     <link rel="stylesheet" href="./assets/style/layout.css" />
+    <script src="https://kit.fontawesome.com/11c4b226a9.js" crossorigin="anonymous"></script>
     <title>millet-coding</title>
   </head>
   <body>
@@ -21,6 +22,7 @@
             alt="검색버튼"
           />
         </div>
+        
         <div class="icon-area">
           <img
             class="like-icon"
@@ -37,6 +39,10 @@
             src="./assets/image/icon-bag.svg"
             alt="장바구니버튼"
           />
+        </div>
+        <div class="reactive-search">
+          <a class="search-btn" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a class="bar-btn" href=""><i class="fa-solid fa-bars"></i></a>
         </div>
       </div>
     </header>
@@ -74,9 +80,15 @@
     <main>
       <div class="main-wrap">
         <div class="main-img">
-          <div class="img-area"><img src="./assets/image/main-img1.jpg" alt="" /></div>
-          <div class="img-area"><img src="./assets/image/main-img2.jpg" alt="" /></div>
-          <div class="img-area"><img src="./assets/image/main-img3.jpg" alt="" /></div>
+          <div class="img-area">
+            <img src="./assets/image/main-img1.jpg" alt="" />
+          </div>
+          <div class="img-area">
+            <img src="./assets/image/main-img2.jpg" alt="" />
+          </div>
+          <div class="img-area">
+            <img src="./assets/image/main-img3.jpg" alt="" />
+          </div>
         </div>
         <div class="main-content">
           <div class="content-head"><h1>MILLET PICK 베스트아이템</h1></div>
@@ -265,17 +277,23 @@
         </div>
         <div class="main-content-2">
           <div class="season-area">
-            <a href=""><div class="img-area"><img src="./assets/image/2-img2.jpg" alt="" /></div></a>
+            <a href=""
+              ><div class="img-area">
+                <img src="./assets/image/2-img2.jpg" alt="" /></div
+            ></a>
             <div>
               <p class="cate">SEASON ESSENTIALS</p>
               <p class="text">산으로 떠날 때 필수아이템</p>
             </div>
           </div>
           <div class="season-area">
-            <a href=""><div class="img-area"><img src="./assets/image/2-img1.jpg" alt="" /></div></a>
+            <a href=""
+              ><div class="img-area">
+                <img src="./assets/image/2-img1.jpg" alt="" /></div
+            ></a>
             <div>
               <p class="cate">2023 F/W NEW ARRIVAL</p>
-            <p class="text">OPEN YOUR MOUNTAIN</p>
+              <p class="text">OPEN YOUR MOUNTAIN</p>
             </div>
           </div>
         </div>
@@ -690,17 +708,22 @@
         </div>
       </div>
     </footer>
+    <div class="button-content">
+      <div class="button-area">
+        <button><span></span></button>
+      </div>
+    </div>
   </body>
   <script>
     const tabmenu = document.querySelectorAll(".brand");
-      console.log(tabmenu.length);
-      for (let i = 0; i < tabmenu.length; i++) {
-        tabmenu[i].addEventListener("mouseover", () => {
-          tabmenu[i].classList.add("is_active");
-        });
-        tabmenu[i].addEventListener("mouseout", () => {
-          tabmenu[i].classList.remove("is_active");
-        });
-      }
+    console.log(tabmenu.length);
+    for (let i = 0; i < tabmenu.length; i++) {
+      tabmenu[i].addEventListener("mouseover", () => {
+        tabmenu[i].classList.add("is_active");
+      });
+      tabmenu[i].addEventListener("mouseout", () => {
+        tabmenu[i].classList.remove("is_active");
+      });
+    }
   </script>
 </html>
