@@ -166,7 +166,7 @@
 }
 .nav-content .nav-area .nav-item {
   display: flex;
-  position: relative;;
+  position: relative;
 }
 
 .nav-content .nav-area .nav-item .menu-list a {
@@ -223,14 +223,14 @@
 }
 .nav-content .nav-area .nav-item li .dept::after {
   display: block;
-  content: '';
-    position: absolute;
-    top: 0;
-    right: -100%;
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.16);
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.16);
 }
 .nav-area > ul > li > .dept > .inner {
   display: flex;
@@ -245,12 +245,11 @@
   background-color: #fff;
   align-items: stretch;
   flex: 1 1 0%;
-
 }
 .nav-content .nav-area .nav-item li .dept .inner .dept-item {
   flex: 1 1 0%;
-    max-width: 18.4rem;
-    border-right: 1px solid #ededed;
+  max-width: 18.4rem;
+  border-right: 1px solid #ededed;
 }
 .nav-content .nav-area .nav-item li .dept .inner .dept-item a {
   margin: 0 2.6rem;
@@ -276,7 +275,7 @@
 .nav-content .nav-area .nav-item li .dept .inner .dept-list li {
   padding-left: 0;
   margin-top: 1.6rem;
-} 
+}
 .nav-content .brand-info {
   position: absolute;
   right: 0;
@@ -357,47 +356,47 @@ main .main-wrap {
 .main-img .swiper-units {
   display: flex;
   position: absolute;
-    left: 50%;
-    bottom: 3rem;
-    z-index: 1;
-    transform: translateX(-50%);
-    align-items: center;
-    justify-content: center;
-    white-space: nowrap;
+  left: 50%;
+  bottom: 3rem;
+  z-index: 1;
+  transform: translateX(-50%);
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
 }
 .main-img .swiper-units .btn-prev {
   width: 2rem;
-    height: 2rem;
-    top: auto;
-    left: auto;
-    right: auto;
-    margin-top: 0;
+  height: 2rem;
+  top: auto;
+  left: auto;
+  right: auto;
+  margin-top: 0;
 }
 .main-img .swiper-units .btn-prev::after {
-    content: '';
-    position: absolute;
-    top: 5px;
-    left: 7px;
-    width: 9px;
-    height: 9px;
-    border-left: 2px solid #111;
-    border-bottom: 2px solid #111;
-    transform: rotate(45deg);
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 7px;
+  width: 9px;
+  height: 9px;
+  border-left: 2px solid #111;
+  border-bottom: 2px solid #111;
+  transform: rotate(45deg);
 }
 .main-img .swiper-units-inner {
   display: flex;
   align-items: center;
   justify-content: center;
-    margin: 0 1.6rem;
+  margin: 0 1.6rem;
 }
 .main-img .swiper-units-inner .swiper-counter {
   align-items: center;
-    font-size: 1.5rem;
-    font-weight: 700;
-    letter-spacing: 1px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 .main-img .swiper-units-inner .swiper-counter .swiper-counter-total::before {
-  content: '/';
+  content: "/";
 }
 .main-img .swiper-units-inner .stop-btn {
   margin-left: 0.8rem;
@@ -406,40 +405,40 @@ main .main-wrap {
   position: relative;
 }
 .main-img .swiper-units-inner .stop-btn::before {
-  content: '';
-    position: absolute;
-    top: -1px;
-    left: 0;
-    height: 100%;
-    border-left: 2px solid #111;
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 0;
+  height: 100%;
+  border-left: 2px solid #111;
 }
 
 .main-img .swiper-units-inner .stop-btn::after {
-  content: '';
-    position: absolute;
-    top: -1px;
-    right: 1px;
-    height: 100%;
-    border-left: 2px solid #111;
+  content: "";
+  position: absolute;
+  top: -1px;
+  right: 1px;
+  height: 100%;
+  border-left: 2px solid #111;
 }
 .main-img .swiper-units .btn-next {
   width: 2rem;
-    height: 2rem;
-    top: auto;
-    left: auto;
-    right: auto;
-    margin-top: 0;
+  height: 2rem;
+  top: auto;
+  left: auto;
+  right: auto;
+  margin-top: 0;
 }
 .main-img .swiper-units .btn-next::after {
-  content: '';
-    position: absolute;
-    top: 5px;
-    right: 7px;
-    width: 9px;
-    height: 9px;
-    border-left: 2px solid #111;
-    border-bottom: 2px solid #111;
-    transform: rotate(-135deg);
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: 7px;
+  width: 9px;
+  height: 9px;
+  border-left: 2px solid #111;
+  border-bottom: 2px solid #111;
+  transform: rotate(-135deg);
 }
 .main-img .reactive-img-area {
   display: none;
@@ -1595,7 +1594,7 @@ footer {
   }
   .footer-content .info-area .millet-info .adress span:nth-of-type(1) {
     margin-right: 0;
-  
+  }
 }
 /* button-content */
 .button-content {
