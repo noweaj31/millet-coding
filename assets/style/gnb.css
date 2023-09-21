@@ -53,6 +53,93 @@
     margin-left: 1.2rem;
   }
   .gnb-wrap .gnb-inner {
-    padding: 1.1rem 1.7rem;
+    padding: 1.7rem 1.7rem;
+  }
+  .gnb-wrap .gnb-inner .gnb-menu-list li {
+    margin-bottom: 1.2rem;
+  }
+  .gnb-wrap .gnb-inner .gnb-menu-list li button {
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: left;
+    position: relative;
+    transition: linear 500ms;
+  }
+  .gnb-wrap .gnb-inner .gnb-menu-list li button::before {
+    content: "";
+    position: absolute;
+    top: 1rem;
+    right: 2px;
+    bottom: auto;
+    left: auto;
+    width: 7px;
+    height: 7px;
+    border-right: 2px solid #111;
+    border-bottom: 2px solid #111;
+    transform: rotate(45deg);
+    transition: 0.3s;
+  }
+  .gnb-wrap .gnb-inner .gnb-menu-list li button[aria-expanded="true"]::before {
+    transform: rotate(-135deg);
+  }
+  .gnb-wrap .gnb-inner .gnb-menu-list li:nth-of-type(2) button:before {
+    display: none;
+  }
+  .gnb-wrap .gnb-inner .gnb-menu-list li .gnb-btn-contents {
+    padding: 0.6875rem 0 0.6875rem;
+    transition: linear 500ms;
+  }
+  .gnb-wrap .gnb-inner .gnb-menu-list li .gnb-btn-contents li {
+    margin-bottom: 0;
+  }
+  .gnb-wrap .gnb-inner .gnb-menu-list li .gnb-btn-contents li a {
+    padding: 0 1rem;
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+  }
+  .gnb-wrap .gnb-inner .brand-menu {
+    margin: 0.9375rem 0 2.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .gnb-wrap .gnb-inner .brand-menu a {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: #999;
+    font-weight: 600;
+  }
+  .gnb-wrap .gnb-bottom {
+    display: flex;
+    background-color: #fff;
+    width: 100%;
+    border-top: 1px solid #ededed;
+    align-items: center;
+    height: 5rem;
+  }
+  .gnb-wrap .gnb-bottom a {
+    width: 50%;
+    height: 100%;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888888;
+    position: relative;
+  }
+  .gnb-wrap .gnb-bottom a::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 1.5rem;
+    right: -1px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #cccccc;
+  }
+  .gnb-wrap .gnb-bottom a:nth-of-type(2)::after {
+    display: none;
   }
 }
