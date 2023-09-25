@@ -1,5 +1,15 @@
 /* header */
-
+header {
+  position: fixed;
+  background: transparent;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  transition: top 0.3s;
+  width: 100%;
+  z-index: 50;
+}
 .header-content {
   padding: 3rem 5rem 0;
   display: flex;
@@ -120,6 +130,7 @@
   transition: 0.3s;
   border-radius: 4px;
   opacity: 0;
+  z-index: 1;
 }
 
 .nav-content .nav-area .nav-item .brand .bottom-menu .menu-area {
@@ -232,7 +243,7 @@
   background-color: #fff;
   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.16);
 }
-.nav-area > ul > li > .dept > .inner {
+.nav-area ul li .dept .inner {
   display: flex;
   justify-content: space-between;
   padding: 4rem 0 6rem 0;
@@ -315,6 +326,9 @@
   }
 }
 /* main-wrap */
+main {
+  padding-top: 14.8rem;
+}
 main .main-wrap {
   margin-top: 0;
   margin-bottom: 12rem;
@@ -1602,15 +1616,20 @@ footer {
   bottom: 3rem;
   right: 5rem;
   left: auto;
+  transition: 0.3s;
 }
-.button-content button {
+.button-content .button-area {
+  position: relative;
+}
+
+.button-content .button-area .btn-bg {
   width: 4.8rem;
   height: 4.8rem;
   border-radius: 50%;
   border: 2px solid #ededed;
   background-color: #fff;
 }
-.button-content button::before {
+.button-content .button-area .btn-bg::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -1621,7 +1640,7 @@ footer {
   border-radius: 50%;
   transform: translate(-50%, -50%);
 }
-.button-content button span {
+.button-content .button-area .btn-bg span {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1630,7 +1649,7 @@ footer {
   transform: translate(-50%, -50%);
   background-color: #ddd;
 }
-.button-content button span::before {
+.button-content .button-area .btn-bg span::before {
   content: "";
   position: absolute;
   left: -1px;
@@ -1638,7 +1657,7 @@ footer {
   height: 7px;
   border-left: 2px solid #111;
 }
-.button-content button span::after {
+.button-content .button-area .btn-bg span::after {
   content: "";
   position: absolute;
   bottom: -1px;
@@ -1648,7 +1667,7 @@ footer {
   border-bottom: 2px solid #111;
   transform-origin: left bottom;
 }
-.button-content button::after {
+.button-content .button-area .btn-bg::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -1656,4 +1675,103 @@ footer {
   width: 2px;
   border-bottom: 2px solid #111;
   transform: translate(-50%, -50%);
+}
+.button-content .button-area:hover .btn-bg span::after {
+  transform: rotate(-360deg);
+  transition: transform 1s;
+}
+.button-content .top-arrow {
+  position: relative;
+  transition: 0.3s;
+}
+
+.button-content .top-arrow .btn-bg {
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  border: 2px solid #ededed;
+  background-color: #fff;
+  margin-top: 1.4rem;
+}
+.button-content .top-arrow .btn-bg span {
+  position: absolute;
+}
+.button-content .top-arrow .btn-bg span::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  border-top: 2px solid #131313;
+  border-right: 2px solid #131313;
+  transform: translate(-50%, -25%) rotate(-45deg);
+}
+.reactive-btn-content {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .button-content {
+    display: none;
+  }
+
+  .reactive-btn-content {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    width: 100%;
+    transition: bottom 0.3s;
+  }
+
+  .reactive-btn-content .top-arrow {
+    position: absolute;
+    right: 2.4rem;
+    bottom: 7rem;
+  }
+  .reactive-btn-content .top-arrow .btn-bg {
+    width: 3.9rem;
+    height: 3.9rem;
+    border-radius: 50%;
+    border: 2px solid #ededed;
+    background-color: #fff;
+    margin-top: 1.4rem;
+  }
+  .reactive-btn-content .top-arrow .btn-bg span {
+    position: absolute;
+  }
+  .reactive-btn-content .top-arrow .btn-bg span::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #131313;
+    border-right: 2px solid #131313;
+    transform: translate(-50%, -25%) rotate(-45deg);
+  }
+  .reactive-btn-content .btn-menu {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border-top: 1px solid #e1e1e1;
+    height: 5rem;
+  }
+  .reactive-btn-content .btn-menu a {
+    display: block;
+    width: calc(100% / 5);
+    height: 100%;
+    position: relative;
+  }
+  .reactive-btn-content .btn-menu a img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2rem;
+  }
 }
