@@ -74,7 +74,11 @@ header {
 }
 @media screen and (max-width: 480px) {
   .header-content {
-    padding: 2rem 3rem 2rem;
+    display: none;
+  }
+
+  .header-content .logo {
+    display: none;
   }
 
   .header-content .input-area {
@@ -82,10 +86,6 @@ header {
   }
   .header-content .icon-area {
     display: none;
-  }
-  .header-content .reactive-search {
-    display: flex;
-    line-height: 0.1rem;
   }
 }
 /* nav */
@@ -462,9 +462,6 @@ main .main-wrap {
   main {
     padding-top: 0;
   }
-  main .main-wrap {
-    margin-top: 2.5rem;
-  }
   .main-img {
     padding: 0;
   }
@@ -477,7 +474,7 @@ main .main-wrap {
     height: 60rem;
     object-fit: cover;
     overflow-x: scroll;
-    margin-top: 5.5rem;
+    margin-top: 4rem;
   }
   .main-img .reactive-img-area img {
     width: 100%;

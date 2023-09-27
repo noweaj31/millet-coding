@@ -1,10 +1,13 @@
-"use strict";
+// "use strict";
 
-const barBtn = document.querySelector(".reactive-search .bar-btn");
-const gnbWrap = document.querySelector(".gnb-wrap");
+// const barBtn = document.querySelector(".reactive-search .bar-btn");
+// const gnbWrap = document.querySelector(".gnb-wrap");
+// const closeBtn = document.querySelector(".header-top button");
 
-barBtn.addEventListener("click", () => {
-  $(gnbWrap).toggleClass("active");
-});
+// barBtn.addEventListener("click", () => {
+//   gnbWrap.classList.add("active");
+// });
 
-console.log(barBtn);
+// closeBtn.addEventListener("click", () => {
+//   gnbWrap.style.display = "none";
+// });
