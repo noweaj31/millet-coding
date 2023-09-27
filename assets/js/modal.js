@@ -1,5 +1,9 @@
-const likeBtns = document.querySelectorAll(".item-1 .millet img");
+// const likeBtns = document.querySelectorAll(".item-1 .millet img");
+// const popupWrap = document.querySelector(".popup-wrap");
 
-likeBtns.forEach((likeBtn) => {
-  likeBtn.addEventListener("click");
-});
+// console.log(popupWrap);
+// likeBtns.forEach((likeBtn) => {
+//   likeBtn.addEventListener("click", () => {
+//     popupWrap.style.display = "block";
+//   });
+// });

@@ -1,0 +1,42 @@
+@charset 'UTF-8';
+
+.popup-wrap {
+  background-color: rgb(31, 31, 31);
+  border-radius: 0.5rem;
+  width: 45rem;
+  height: 18rem;
+  padding: 3rem 2rem;
+  margin: 0 auto;
+  position: relative;
+  z-index: 52;
+}
+
+.popup-wrap .text {
+  color: #fff;
+}
+.popup-wrap .text h2 {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.popup-wrap .text p {
+  font-size: 1.3rem;
+}
+.popup-wrap .btn-area {
+  position: absolute;
+  bottom: 3rem;
+  right: 2rem;
+}
+.popup-wrap .btn-area .cancel {
+  border: 1px solid #4c8bcf;
+  padding: 0.6rem 2rem;
+  border-radius: 0.5rem;
+  color: #4c8bcf;
+}
+.popup-wrap .btn-area .confirm {
+  padding: 0.6rem 2rem;
+  border: 1px solid #4c8bcf;
+  background-color: #4c8bcf;
+  border-radius: 0.5rem;
+  margin-left: 0.6rem;
+}

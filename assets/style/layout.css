@@ -74,7 +74,7 @@ header {
 }
 @media screen and (max-width: 480px) {
   .header-content {
-    padding: 2rem 3rem 0;
+    padding: 2rem 3rem 2rem;
   }
 
   .header-content .input-area {
@@ -459,6 +459,9 @@ main .main-wrap {
 }
 
 @media screen and (max-width: 480px) {
+  main {
+    padding-top: 0;
+  }
   main .main-wrap {
     margin-top: 2.5rem;
   }
@@ -474,6 +477,7 @@ main .main-wrap {
     height: 60rem;
     object-fit: cover;
     overflow-x: scroll;
+    margin-top: 5.5rem;
   }
   .main-img .reactive-img-area img {
     width: 100%;

@@ -4,6 +4,7 @@ const header = document.querySelector("header");
 const topArrow = document.querySelector(".button-content .top-arrow");
 const reactiveBtnContent = document.querySelector(".reactive-btn-content");
 const reactive = window.matchMedia("screen and (max-width: 480px)");
+const reTopArrow = document.querySelector(".reactive-btn-content .top-arrow");
 
 document.addEventListener("scroll", () => {
   if (window.scrollY === 0) header.style.backgroundColor = "#fff";
@@ -17,6 +18,13 @@ document.addEventListener("scroll", () => {
 });
 
 topArrow.addEventListener("click", () => {
+  window.scrollTo({
+    top: "0",
+    behavior: "smooth",
+  });
+});
+
+reTopArrow.addEventListener("click", () => {
   window.scrollTo({
     top: "0",
     behavior: "smooth",
