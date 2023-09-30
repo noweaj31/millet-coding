@@ -36,28 +36,3 @@ prevButton.addEventListener("click", () => {
 });
 
 startAutoCarousel();
-
-// best-item
-const itemWrap = document.querySelector("main-content .item-wrap");
-const Item = document.querySelectorAll("main-content .item-1");
-const totalItems = document.querySelectorAll("main-content .item-1").length;
-const ItemWidth = Item.clientWidth;
-let currentItem = 0;
-let autoItemInterval;
-
-const rotateItem = (direction) => {
-  currentCarousel += direction;
-  const scrollX = currentCarousel * ItemWidth;
-  carouselWrap.scrollTo({
-    left: scrollX,
-    behavior: "smooth",
-  });
-};
-
-const startAutoItem = () => {
-  autoItemInterval = setInterval(() => {
-    rotateItem(1);
-  }, 3000);
-};
-
-startAutoItem();
