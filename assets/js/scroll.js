@@ -5,6 +5,17 @@ const topArrow = document.querySelector(".button-content .top-arrow");
 const reactiveBtnContent = document.querySelector(".reactive-btn-content");
 const reactive = window.matchMedia("screen and (max-width: 480px)");
 const reTopArrow = document.querySelector(".reactive-btn-content .top-arrow");
+const scrollY = window.scrollY;
+let lastScrollY = 0;
+
+addEventListener("scroll", (e) => {
+  const direction =
+    scrollY > lastScrollY
+      ? (reactiveBtnContent.style.transform = "translateY(50px)")
+      : (reactiveBtnContent.style.transform = "translateY(0)");
+  lastScrollY = scrollY;
+  console.log(direction);
+});
 
 document.addEventListener("scroll", () => {
   if (window.scrollY === 0) header.style.backgroundColor = "#fff";
@@ -31,7 +42,7 @@ reTopArrow.addEventListener("click", () => {
   });
 });
 
-document.addEventListener("scroll", () => {
-  if (window.scrollY > 50) reactiveBtnContent.style.bottom = "-50px";
-  if (window.scrollY <= 50) reactiveBtnContent.style.bottom = "0px";
-});
+// document.addEventListener("scroll", () => {
+//   if (window.scrollY > 50) reTopArrow.style.bottom = "100px";
+//   if (window.scrollY <= 50) reTopArrow.style.bottom = "-50px";
+// });
