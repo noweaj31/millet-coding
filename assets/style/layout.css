@@ -72,6 +72,7 @@ header {
     padding: 0 1.4rem 0 1.2rem;
   }
 }
+
 @media screen and (max-width: 480px) {
   .header-content {
     display: none;
@@ -91,8 +92,7 @@ header {
 /* nav */
 
 .nav-content {
-  max-width: 163.2rem;
-  min-width: 112rem;
+  width: 100%;
   margin: 0 auto;
   margin-top: 2.4rem;
   padding: 0 5rem;
@@ -289,6 +289,7 @@ header {
 }
 .nav-content .brand-info {
   position: absolute;
+  top: 0;
   right: 0;
   display: flex;
   font-weight: 700;
@@ -300,17 +301,41 @@ header {
 .nav-content .brand-info li {
   margin-left: 2.4rem;
 }
-
-@media screen and (max-width: 767px) {
-  .nav-content {
-    margin-top: 1.5rem;
+.nav-content .sub-menu-icon {
+  display: none;
+}
+@media screen and (max-width: 1100px) {
+  .nav-content .brand-info {
+    display: none;
   }
+  .nav-content .sub-menu-icon {
+    display: block;
+  }
+  .nav-content .sub-menu-icon span {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 2px;
+    bottom: auto;
+    left: auto;
+    width: 7px;
+    height: 7px;
+    border-right: 2px solid #111;
+    border-bottom: 2px solid #111;
+    transform: rotate(45deg);
+    transition: 0.3s;
+  }
+}
+@media screen and (max-width: 767px) {
   .nav-content .brand-area {
     font-size: 1.2rem;
     padding-bottom: 1.2rem;
   }
   .nav-content .brand-area .brand-item li {
     padding-left: 1rem;
+  }
+  .nav-content .nav-area .nav-item .menu-list {
+    margin-left: 1.3rem;
   }
   .nav-content .brand-info {
     font-size: 1.2rem;
@@ -340,12 +365,13 @@ main .main-wrap {
   overflow: hidden;
   position: relative;
 }
-.main-img .img-area {
+.main-img .mainimg-area {
   display: flex;
   width: 100%;
   height: 67rem;
+  overflow: hidden;
 }
-.main-img .img-area img {
+.main-img .mainimg-area img {
   width: 100%;
   height: 67rem;
   object-fit: cover;
@@ -473,7 +499,7 @@ main .main-wrap {
     overflow: hidden;
     position: relative;
   }
-  .re-main-img .reactive-img-area {
+  .re-main-img .reactive-mainimg-area {
     display: flex;
     width: 100%;
     height: 60rem;
@@ -481,7 +507,7 @@ main .main-wrap {
     margin-top: 4rem;
   }
 
-  .re-main-img .reactive-img-area img {
+  .re-main-img .reactive-mainimg-area img {
     width: 5rem;
     height: 100%;
     object-fit: cover;

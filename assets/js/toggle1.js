@@ -4,7 +4,7 @@ $(function () {
     $(".gnb-wrap").toggleClass("active");
   });
 
-  $(".trigger").click(function () {
-    $(".gnb-wrap, .trigger").removeClass("active");
+  $(".gnb-wrap span").click(function () {
+    $(".gnb-wrap").removeClass("active");
   });
 });
