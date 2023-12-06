@@ -131,6 +131,7 @@ header {
   border-radius: 4px;
   opacity: 0;
   z-index: 1;
+  visibility: hidden;
 }
 
 .nav-content .nav-area .nav-item .brand .bottom-menu .menu-area {
@@ -1048,11 +1049,7 @@ main .main-wrap {
   margin: 0 0.8rem;
   position: relative;
 }
-.new-item-content .tab-content .item-wrap-area .item-wrap-w {
-  height: 100%;
-  position: relative;
-  overflow: hidden;
-}
+
 .new-item-content .tab-content .item-wrap {
   display: flex;
 }

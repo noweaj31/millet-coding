@@ -14,7 +14,6 @@ addEventListener("scroll", (e) => {
       ? (reactiveBtnContent.style.transform = "translateY(50px)")
       : (reactiveBtnContent.style.transform = "translateY(0)");
   lastScrollY = scrollY;
-  console.log(direction);
 });
 
 document.addEventListener("scroll", () => {
@@ -28,19 +27,21 @@ document.addEventListener("scroll", () => {
   }
 });
 
-topArrow.addEventListener("click", () => {
+function goToTop() {
   window.scrollTo({
     top: "0",
     behavior: "smooth",
   });
-});
+}
+function reGoToTop() {
+  window.scrollTo({
+    top: "0",
+    behavior: "smooth",
+  });
+}
 
-reTopArrow.addEventListener("click", () => {
-  window.scrollTo({
-    top: "0",
-    behavior: "smooth",
-  });
-});
+topArrow.addEventListener("click", _.throttle(goToTop, 1000));
+reTopArrow.addEventListener("click", _.throttle(reGoToTop, 1000));
 
 // document.addEventListener("scroll", () => {
 //   if (window.scrollY > 50) reTopArrow.style.bottom = "100px";
