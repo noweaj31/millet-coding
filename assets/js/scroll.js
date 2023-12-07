@@ -14,6 +14,7 @@ addEventListener("scroll", (e) => {
       ? (reactiveBtnContent.style.transform = "translateY(50px)")
       : (reactiveBtnContent.style.transform = "translateY(0)");
   lastScrollY = scrollY;
+  console.log(direction);
 });
 
 document.addEventListener("scroll", () => {
