@@ -68,7 +68,7 @@ $(".main-content .item-wrap")
     slidesToScroll: 1,
     prevArrow: false,
     nextArrow: false,
-    dots: true,
+    dots: false,
     responsive: [
       {
         breakpoint: 1024,
@@ -84,7 +84,7 @@ $(".main-content .item-wrap")
         },
       },
       {
-        breakpoint: 630,
+        breakpoint: 684,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -192,11 +192,24 @@ $(".today-content .item-wrap")
     slidesToScroll: 1,
     prevArrow: false,
     nextArrow: false,
+
     responsive: [
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 5,
+          slidesToScroll: 1,
+          infinite: true,
+          autoplay: true,
+          speed: 300,
+          prevArrow: false,
+          nextArrow: false,
+        },
+      },
+      {
+        breakpoint: 786,
+        settings: {
+          slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
           autoplay: true,

@@ -386,7 +386,19 @@ main .main-wrap .tns-nav {
 .slick-dots {
   bottom: -20%;
 }
-
+@media screen and (max-width: 665px) {
+  .slick-dots li {
+    width: 0.6rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .slick-dots {
+    bottom: -11%;
+  }
+}
+.main-img .tns-outer button {
+  display: none;
+}
 .main-img .mainimg-area img {
   width: 100%;
   height: 100%;
@@ -519,6 +531,9 @@ main .main-wrap .tns-nav {
     overflow: hidden;
     position: relative;
   }
+  .re-main-img .tns-outer button {
+    display: none;
+  }
   .re-main-img .reactive-mainimg-area {
     display: flex;
     width: 100%;
@@ -528,10 +543,9 @@ main .main-wrap .tns-nav {
   }
 
   .re-main-img .reactive-mainimg-area img {
-    width: 5rem;
+    width: 100%;
     height: 100%;
     object-fit: cover;
-    flex: 1 0 100%;
   }
   .re-main-img .swiper-area {
     position: absolute;
@@ -1033,6 +1047,9 @@ main .main-wrap .tns-nav {
 .new-item-content .tab-content .main-best:hover {
   overflow: hidden;
 }
+.tab-contents .tns-outer button {
+  display: none;
+}
 .new-item-content .tab-content .main-best img {
   width: 100%;
   height: 52rem;
@@ -1075,7 +1092,7 @@ main .main-wrap .tns-nav {
 
 .new-item-content .tab-content .item-wrap .item-1 {
   width: calc(25% - 1.6rem);
-  margin-right: 1.6rem;
+  /* margin-right: 1.6rem; */
   height: 100%;
   position: relative;
   flex-shrink: 0;
@@ -1259,7 +1276,6 @@ main .main-wrap .tns-nav {
     padding-bottom: 3rem;
   }
   .new-item-content .tab-content .item-wrap .item-1 {
-    margin-right: 0.8rem;
     width: calc(50% - 0.8rem);
   }
   .new-item-content .tab-content .item-wrap-area {
@@ -1308,6 +1324,7 @@ main .main-wrap .tns-nav {
   display: flex;
   position: relative;
   padding-bottom: 6.3rem;
+  overflow: hidden;
 }
 
 .today-content .best-content .item-wrap {
@@ -1453,6 +1470,30 @@ main .main-wrap .tns-nav {
   height: 2px;
   transform: translateX(-50%);
   background-color: rgba(17, 17, 17, 0.1);
+}
+.best-content-thumbnail .thumbnail-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+.best-content-thumbnail .thumbnail-list .thumbnail-item button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  background-color: rgb(194, 200, 204);
+}
+.best-content-thumbnail .thumbnail-list .thumbnail-item button img {
+  display: none;
+}
+.best-content-thumbnail .thumbnail-list .thumbnail-item.tns-nav-active button {
+  background-color: rgb(47, 52, 56);
+  width: 0.8rem;
+  height: 0.8rem;
 }
 @media screen and (max-width: 480px) {
   .today-content {
