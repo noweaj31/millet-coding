@@ -28,6 +28,7 @@
     display: inline-block;
     width: 100%;
     height: 100vh;
+    overflow-y: auto;
     position: fixed;
     top: 0;
     right: -48rem;
@@ -112,17 +113,73 @@
     border-right: 2px solid #111;
     border-bottom: 2px solid #111;
     transform: rotate(45deg);
-    transition: 0.3s;
+    transition: transform 300ms ease-in-out;
   }
-  .gnb-wrap .gnb-inner .gnb-menu-list li button[aria-expanded="true"]::before {
+  /* .gnb-wrap .gnb-inner .gnb-menu-list li button[aria-expanded="true"]::before {
     transform: rotate(-135deg);
-  }
+  } */
   .gnb-wrap .gnb-inner .gnb-menu-list li:nth-of-type(2) button:before {
     display: none;
   }
-  .gnb-wrap .gnb-inner .gnb-menu-list li .gnb-btn-contents {
-    padding: 0.6875rem 0 0.6875rem;
-    transition: linear 500ms;
+
+  .gnb-wrap .gnb-inner .gnb-menu-list .accordion-area .gnb-btn-contents {
+    margin: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 300ms ease-in-out, margin 300ms ease-in-out;
+  }
+  .gnb-wrap .gnb-inner .gnb-menu-list .accordion-area.is-open button::before {
+    transform: rotate(-135deg);
+  }
+  .gnb-wrap
+    .gnb-inner
+    .gnb-menu-list
+    .accordion-area.is-open
+    .gnb-btn-contents {
+    margin: 0.6875rem 0 0.6875rem;
+    transition: max-height 300ms ease-in-out, margin 300ms ease-in-out;
+  }
+  .gnb-wrap
+    .gnb-inner
+    .gnb-menu-list
+    .accordion-area.is-open
+    .gnb-btn-contents.brands-contents {
+    max-height: 7.5rem;
+  }
+  .gnb-wrap
+    .gnb-inner
+    .gnb-menu-list
+    .accordion-area.is-open
+    .gnb-btn-contents.men-contents {
+    max-height: 15rem;
+  }
+  .gnb-wrap
+    .gnb-inner
+    .gnb-menu-list
+    .accordion-area.is-open
+    .gnb-btn-contents.women-contents {
+    max-height: 15rem;
+  }
+  .gnb-wrap
+    .gnb-inner
+    .gnb-menu-list
+    .accordion-area.is-open
+    .gnb-btn-contents.shoes-contents {
+    max-height: 5rem;
+  }
+  .gnb-wrap
+    .gnb-inner
+    .gnb-menu-list
+    .accordion-area.is-open
+    .gnb-btn-contents.acc-contents {
+    max-height: 15rem;
+  }
+  .gnb-wrap
+    .gnb-inner
+    .gnb-menu-list
+    .accordion-area.is-open
+    .gnb-btn-contents.outlet-contents {
+    max-height: 12.5rem;
   }
   .gnb-wrap .gnb-inner .gnb-menu-list li .gnb-btn-contents li {
     margin-bottom: 0;

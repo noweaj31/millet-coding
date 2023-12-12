@@ -1471,30 +1471,7 @@ main .main-wrap .tns-nav {
   transform: translateX(-50%);
   background-color: rgba(17, 17, 17, 0.1);
 }
-.best-content-thumbnail .thumbnail-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.6rem;
-}
-.best-content-thumbnail .thumbnail-list .thumbnail-item button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 0.6rem;
-  height: 0.6rem;
-  border-radius: 0.4rem;
-  overflow: hidden;
-  background-color: rgb(194, 200, 204);
-}
-.best-content-thumbnail .thumbnail-list .thumbnail-item button img {
-  display: none;
-}
-.best-content-thumbnail .thumbnail-list .thumbnail-item.tns-nav-active button {
-  background-color: rgb(47, 52, 56);
-  width: 0.8rem;
-  height: 0.8rem;
-}
+
 @media screen and (max-width: 480px) {
   .today-content {
     margin-top: 8rem;
