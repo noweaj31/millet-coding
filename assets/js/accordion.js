@@ -22,14 +22,10 @@
 const accordionButtons = document.querySelectorAll(
   ".gnb-wrap .gnb-inner .accordion-area button"
 );
-const accordionButtonsArrows = document.querySelectorAll(
-  ".gnb-wrap .gnb-inner .accordion-area button::before"
-);
 
 function toggleDrawerMenu() {
   const drawerMenu = this.parentNode;
   drawerMenu.classList.toggle("is-open");
-  accordionButtonsArrows.style.transform = "rotate(-180)";
 }
 
 accordionButtons.forEach(function (button) {
