@@ -8,7 +8,7 @@ const reTopArrow = document.querySelector(".reactive-btn-content .top-arrow");
 const scrollY = window.scrollY;
 let lastScrollY = 0;
 
-addEventListener("scroll", (e) => {
+addEventListener("scroll", () => {
   const direction =
     scrollY > lastScrollY
       ? (reactiveBtnContent.style.transform = "translateY(50px)")
@@ -43,8 +43,3 @@ function reGoToTop() {
 
 topArrow.addEventListener("click", _.throttle(goToTop, 1000));
 reTopArrow.addEventListener("click", _.throttle(reGoToTop, 1000));
-
-// document.addEventListener("scroll", () => {
-//   if (window.scrollY > 50) reTopArrow.style.bottom = "100px";
-//   if (window.scrollY <= 50) reTopArrow.style.bottom = "-50px";
-// });
